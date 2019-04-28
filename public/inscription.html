@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>Inscription</title>
+			<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		</head>
+		<body>
+			<form action="#" onsubmit="validation(); return false;">
+				<p>
+					<label for="féminin">Madame </label><input type="radio" name="sexe" value="féminin" id="féminin" />
+					<label for="masculin">Monsieur </label><input type="radio" name="sexe" value="masculin" id="masculin" checked />
+				</p>
+				<p>
+					<label for="nom">Votre nom: </label><input type="text" name="nom" id="nom" onchange="verifNom()" /> <span id="msgerreurnom"></span>
+				</p>
+				<p>
+					<label for="prenom">Votre prénom: </label><input type="text" name="prenom" id="prenom" onchange="verifPrenom()" /> <span id="msgerreurprenom"></span>
+				</p>
+				<p>
+					<label for="age">Votre âge: </label><input type="number" name="age" id="age" maxlength="2" onchange="verifAge()" /> <span id="msgerreurage"></span>
+				</p>
+				<p>
+					<label for="adresse">Votre adresse: </label><input type="text" name="adresse" id="adresse" onchange="verifAdresse()" /> <span id="msgerreuradresse"></span>
+				</p>
+				<p>
+					<label for="cp">Votre code postal: </label><input type="text" name="cp" id="cp" onchange="verifCp()" /> <span id="msgerreurcp"></span>
+				</p>
+				<p>
+					<label for="ville">Votre ville: </label><input type="text" name="ville" id="ville" onchange="verifVille()" /> <span id="msgerreurville"></span>
+				</p>
+				<p>
+					<label for="Pays">Votre pays: </label>
+					<select name="Pays" id="Pays">
+						<option value="">choisir pays</option>
+						<option value="Allemagne">Allemagne</option>
+						<option value="Angleterre">Angleterre</option>
+						<option value="Belgique">Belgique</option>
+						<option value="Espagne">Espagne</option>
+						<option value="France">France</option>
+						<option value="Irlande">Irlande</option>
+						<option value="Italie">Italie</option>
+						<option value="Portugal">Portugal</option>
+						<option value="Suisse">Suisse</option>
+					</select>
+				</p>
+				<p>
+					<label for="pass">Votre adresse e-mail</label> : <input type="text" name="email" id="email" onchange="verifMail()" /> <span id="msgerreuremail"></span>
+				</p>
+				<p>
+					<label for="pass">Votre mot de passe</label> : <input type="password" name="pass" id="pass" onchange="verifPass()" /> <span id="msgerreurepass"></span>
+				</p>
+				<p>
+					<label for="passConfirm">Confirmation de votre mot de passe</label> : <input type="password" name="passConfirm" id="passConfirm" onchange="verifPassConfirm()" /> <span id="msgerreurepassConfirm"></span>
+				</p>
+				<p>
+					<label for="tel">Votre numéro de téléphone</label> : <input type="tel" name="tel" id="tel" onchange="verifTel()" /> <span id="msgerreuretel"></span>
+				</p>
+				<p>
+					<input type="checkbox" name="a" id="a"/> <label for="a">a</label>
+				
+				
+					<input type="checkbox" name="b" id="b"/> <label for="b">b</label>
+				
+				
+					<input type="checkbox" name="c" id="c"/> <label for="c">c</label>
+				
+				
+					<input type="checkbox" name="d" id="d"/> <label for="d">d</label>
+					
+					<span id="msgerreurecheckbox"></span>
+				</p>
+				<p>
+					<label for="commentaire">Votre commentaire</label> : <textarea name="commentaire" id="commentaire" onchange="verifCommentaire()" ></textarea> <span id="msgerreurecommentaire"></span>
+				</p>
+				<p>
+					<input type="submit" value="S'inscrire"/>
+				</p>
+			</form>
+			<script src="js/script.js"></script>
+		</body>
+</html>
