@@ -14,5 +14,5 @@ aller proposer en en binôme votre réalisation.
 
 ## Contributeurs
 
-* Dorian Houssaye 
-* Thibaut Leneveu
+* Dorian Houssaye ([@DorianHoussaye](https://github.com/DorianHoussaye))
+* Thibaut Leneveu ([@leneveuT](https://github.com/leneveuT))
